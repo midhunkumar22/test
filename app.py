@@ -1,13 +1,13 @@
-
+from types import MethodType
 from flask import Flask
-from nltk.tokenize import word_tokenize
 
 app = Flask(__name__)
-@app.route('/')
-def test():
-    pass 
 
-
-if __name__ == '__main__':
-    test()
- 
+@app.route("/", methods =["GET"])
+def home():
+    return "Hello, World!"
+@app.route("/", methods =["POST"])   
+def End():
+    return "Bye, World!"
+if __name__ == "__main__":
+    app.run(debug=True)

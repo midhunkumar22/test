@@ -3,14 +3,14 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/", methods =["GET","POST"])
+@app.route("/", methods =["GET","POST","COPY","PUT"])
 def home():
   if request.method == "GET":
       return "This is GET Request"
   elif request.method == "POST":
        return "This is POST Method"
   else :
-      return "this is " + request.method + "method"
+      return "this is " + request.method + " Method"
 
 
     

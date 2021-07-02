@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-from flask import Flask, request
 
 =======
 ####### Simple Flask ######
@@ -9,7 +8,7 @@ __version__ = "1.0.1"
 __status__ = "DEV"
 #############################
 
-from flask import Flask
+from flask import Flask, request
 >>>>>>> main
 
 app = Flask(__name__)

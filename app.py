@@ -5,16 +5,20 @@ __version__ = "1.0.1"
 __status__ = "Prod"
 #############################
 
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route("/", methods =["GET"])
+@app.route("/", methods =["GET","POST","COPY","PUT"])
 def home():
-    return "Hello, World!"
-@app.route("/", methods =["POST"])   
-def End():
-    return "Bye, World!"
+  if request.method == "GET":
+      return "This is GET Request"
+  elif request.method == "POST":
+       return "This is POST Method"
+  else :
+      return "this is " + request.method + " Method"
+
+
     
 if __name__ == "__main__":
     app.run(debug=True)

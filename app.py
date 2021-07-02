@@ -2,7 +2,7 @@
 #!/user/bin/python
 __author__ = "Midhunkumar"
 __version__ = "1.0.1"
-__status__ = "DEV"
+__status__ = "Prod"
 #############################
 
 from flask import Flask

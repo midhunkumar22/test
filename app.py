@@ -1,5 +1,16 @@
+<<<<<<< HEAD
 from flask import Flask, request
 
+=======
+####### Simple Flask ######
+#!/user/bin/python
+__author__ = "Midhunkumar"
+__version__ = "1.0.1"
+__status__ = "DEV"
+#############################
+
+from flask import Flask
+>>>>>>> main
 
 app = Flask(__name__)
 

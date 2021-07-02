@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 ####### Simple Flask ######
 #!/user/bin/python
 __author__ = "Midhunkumar"
@@ -9,7 +6,6 @@ __status__ = "DEV"
 #############################
 
 from flask import Flask, request
->>>>>>> main
 
 app = Flask(__name__)
 
